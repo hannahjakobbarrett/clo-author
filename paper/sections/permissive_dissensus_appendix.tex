@@ -1,0 +1,1254 @@
+\begin{appendices}
+
+\section{Main Results - Regression Tables}
+Table \ref{tab:mainregression} and Table \ref{tab:countryregression} show the exact p-values in parentheses below the estimate of the average treatment effect. Stars indicate standard p-value thresholds, as reported in Figures \ref{fig:main_results} and \ref{fig:country_results} in the main text. 
+
+\begin{table} [H]
+\centering
+\begin{talltblr}[         %% tabularray outer open
+entry=none,label=none,
+note{}={+ p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+caption={Main Results and Exact P-Values in Parentheses},
+label={tab:mainregression}]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]},
+column{2,3}={}{halign=c,},
+column{1}={}{halign=l,},
+hline{20}={1,2,3}{solid, black, 0.05em},
+}                     %% tabularray inner close
+\toprule
+& Main Model & With Controls \\ \midrule %% TinyTableHeader
+Domestic Signal                       & \num{-0.013}    & \num{-0.009}    \\
+& (\num{0.226})   & (\num{0.332})   \\
+Trump Signal                          & \num{-0.02}+    & \num{-0.018}+   \\
+& (\num{0.067})   & (\num{0.086})   \\
+Competing Policy Signals              & \num{-0.03}**   & \num{-0.027}**  \\
+& (\num{0.005})   & (\num{0.008})   \\
+Age                                   &                  & \num{0}         \\
+&                  & (\num{0.105})   \\
+Gender (Male)                         &                  & \num{0.01}      \\
+&                  & (\num{0.194})   \\
+Cooperative Internationalism          &                  & \num{-0.077}*** \\
+&                  & (\num{0})       \\
+Militant Internationalism             &                  & \num{0.097}***  \\
+&                  & (\num{0})       \\
+Isolationism                          &                  & \num{-0.162}*** \\
+&                  & (\num{0})       \\
+Pre-Treatment Opinion on Military Aid & \num{-0.889}*** & \num{-0.694}*** \\
+& (\num{0})       & (\num{0})       \\
+Num.Obs.                              & \num{3022}      & \num{3022}      \\
+R2                                    & \num{0.633}     & \num{0.677}     \\
+R2 Adj.                               & \num{0.632}     & \num{0.674}     \\
+RMSE                                  & \num{0.21}      & \num{0.20}      \\
+\bottomrule
+\end{talltblr}
+\end{table} 
+\newpage
+
+\begin{landscape}
+\begin{table}[H]
+\centering
+\footnotesize
+\begin{talltblr}[         %% tabularray outer open
+entry=none,label=none,
+note{}={+ p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+caption={Country Results and Exact P-Values},
+label={tab:countryregression}]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]},
+column{2,3,4,5}={}{halign=c,},
+column{1}={}{halign=l,},
+hline{20}={1,2,3,4,5}{solid, black, 0.05em},
+}                     %% tabularray inner close
+\toprule
+& Germany Main Model & Germany Main Model + Controls & UK Main Model & UK Main Model + Controls \\ \midrule %% TinyTableHeader
+Domestic Signal                       & \num{-0.01}     & \num{-0.006}    & \num{-0.015}    & \num{-0.011}    \\
+& (\num{0.462})   & (\num{0.624})   & (\num{0.342})   & (\num{0.468})   \\
+Trump Signal                          & \num{-0.009}    & \num{-0.002}    & \num{-0.031}+   & \num{-0.034}*   \\
+& (\num{0.52})    & (\num{0.881})   & (\num{0.068})   & (\num{0.037})   \\
+Competing Policy Signals              & \num{-0.023}+   & \num{-0.024}+   & \num{-0.036}*   & \num{-0.029}+   \\
+& (\num{0.09})    & (\num{0.058})   & (\num{0.025})   & (\num{0.059})   \\
+Age                                   &                  & \num{-0.001}+   &                  & \num{0}         \\
+&                  & (\num{0.078})   &                  & (\num{0.54})    \\
+Gender (Male)                         &                  & \num{0.01}      &                  & \num{0.01}      \\
+&                  & (\num{0.289})   &                  & (\num{0.376})   \\
+Cooperative Internationalism          &                  & \num{-0.1}***   &                  & \num{-0.054}*   \\
+&                  & (\num{0})       &                  & (\num{0.043})   \\
+Militant Internationalism             &                  & \num{0.082}***  &                  & \num{0.112}***  \\
+&                  & (\num{0})       &                  & (\num{0})       \\
+Isolationism                          &                  & \num{-0.181}*** &                  & \num{-0.146}*** \\
+&                  & (\num{0})       &                  & (\num{0})       \\
+Pre-Treatment Opinion on Military Aid & \num{-0.887}*** & \num{-0.674}*** & \num{-0.855}*** & \num{-0.703}*** \\
+& (\num{0})       & (\num{0})       & (\num{0})       & (\num{0})       \\
+Num.Obs.                              & \num{1497}      & \num{1497}      & \num{1525}      & \num{1525}      \\
+R2                                    & \num{0.720}     & \num{0.760}     & \num{0.510}     & \num{0.554}     \\
+R2 Adj.                               & \num{0.719}     & \num{0.757}     & \num{0.508}     & \num{0.548}     \\
+RMSE                                  & \num{0.46}      & \num{0.46}      & \num{0.23}      & \num{0.22}      \\
+\bottomrule
+\end{talltblr}
+\end{table} 
+\end{landscape}
+
+\subsection{Power Analysis}
+\begin{table}[!h]
+\centering
+\caption{Power Analysis by Treatment Group}
+\centering
+\begin{tabular}[t]{lrr}
+\toprule
+Treatment Effect & Power in Main Model & Power With Controls\\
+\midrule
+\cellcolor{gray!10}{Domestic Signal} & \cellcolor{gray!10}{0.231} & \cellcolor{gray!10}{0.165}\\
+Trump Signal & 0.456 & 0.153\\
+\cellcolor{gray!10}{Competing Policy Signals} & \cellcolor{gray!10}{0.818} & \cellcolor{gray!10}{0.764}\\
+\bottomrule
+\multicolumn{3}{l}{\rule{0pt}{1em}\textit{Note: }}\\
+\multicolumn{3}{l}{\rule{0pt}{1em}Power calculated at $\alpha = 0.05$, two-sided.}\\
+\end{tabular}
+\end{table}
+
+\subsection{Marginal Mean Support for Military Aid}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{Figures/marg_means_plot.png}
+    \caption{Marginal Mean Support for Increasing Military Aid, Across Countries}
+    \label{fig:marginal_means}
+\end{figure}
+
+\section{Exploratory Analysis and Robustness Checks}
+\subsection{Distribution of Pre and Post-Treatment Support for Military Aid}
+The following graph demonstrates binned distributions of pre and post-treatment support for military aid, across both countries. 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{Figures/distribution_pre_post.png}
+    \caption{Distribution of Support for Aid}
+    \label{fig:distribution_pre_post}
+\end{figure}
+
+\subsection{Correlation of Pre and Post-Treatment Support for Military Aid}
+In the design, I included the following pre-treatment measure of respondents' attitudes towards military aid: 
+\begin{enumerate}
+    \item \textbf{Pre-Treatment DV:}  ``How would you evaluate [your country's] supply of military aid to Ukraine? In your opinion, is the volume of arms deliveries to Ukraine..." 
+        \begin{enumerate}
+            \item Far too little
+            \item Slightly too little
+            \item Just the right amount
+            \item Slightly too much
+            \item Far too much 
+        \end{enumerate}
+\end{enumerate}
+The assumption was that using this pre-treatment measure as a covariate in the regression models would substantially improve statistical power by reducing residual variance in the main outcome variable. As seen in \ref{tab:correlation}, the pre-treatment variable correlates strongly with the dependent variable across all groups (r = -0.83 in the control group), reflecting the stability of individual differences in the underlying construct over time. Because the pre-treatment measure explains a large share of the variance in the outcome, including it as a control removes a substantial source of noise and increases the precision of the treatment effect estimates in the main model. The negative sign of the correlation is expected given the reverse-coding of the pre-treatment variable.
+
+\begin{table}[H]
+\caption{Correlation Between Pre- and Post-Treatment Support for Aid, by Treatment Group}
+\label{tab:correlation}
+\centering
+\begin{tabular}[t]{lrrr}
+\toprule
+Treatment Group & Mean Pre-Treatment & Mean Dependent Variable & Correlation\\
+\midrule
+Control & 0.543 & 0.494 & -0.834\\
+Domestic Policy Signal & 0.527 & 0.497 & -0.808\\
+Trump Policy Signal & 0.544 & 0.474 & -0.748\\
+Competing Policy Signals & 0.530 & 0.476 & -0.790\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Time Spent on Treatment}
+The main analysis of this paper found that competing policy signals have a negative, significant effect on public support for military aid. However, the length of treatment text also varied across treatment conditions. Respondents in the competing policy signals condition were asked to read two policy signals (one from home and one from abroad, in a randomized order). There may be a risk that time spent on the treatment text contributed to the effect of the policy signal. To check for this, I ran additional models with a control for the time spent on the treatment phase of the experiment. 
+\begin{table} [H]
+\centering
+\begin{talltblr}[         %% tabularray outer open
+entry=none,
+note{}={+ p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+caption={Results Controlling for Time Spent on Treatment (P-Values in Parentheses)},
+label={tab:timespent}]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]},
+column{2,3}={}{halign=c,},
+column{1}={}{halign=l,},
+hline{22}={1,2,3}{solid, black, 0.05em},
+}                     %% tabularray inner close
+\toprule
+& Main Model & With Controls \\ \midrule %% TinyTableHeader
+Domestic Signal                       & \num{-0.0139}   & \num{-0.0108}     \\
+& (\num{0.181})   & (\num{0.273})     \\
+Trump Signal                          & \num{-0.0213}+  & \num{-0.0189}+    \\
+& (\num{0.0525})  & (\num{0.069})     \\
+Competing Policy Signals              & \num{-0.033}**  & \num{-0.0296}**   \\
+& (\num{0.0019})  & (\num{0.0034})    \\
+Age                                   &                  & \num{-0.00036}    \\
+&                  & (\num{0.125})     \\
+Gender (Male)                         &                  & \num{0.0102}      \\
+&                  & (\num{0.167})     \\
+Cooperative Internationalism          &                  & \num{-0.0752}***  \\
+&                  & (\num{1.09e-05})  \\
+Militant Internationalism             &                  & \num{0.0968}***   \\
+&                  & (\num{1.82e-10})  \\
+Isolationism                          &                  & \num{-0.162}***   \\
+&                  & (\num{4.51e-23})  \\
+Pre-Treatment Opinion on Military Aid & \num{-0.889}*** & \num{-0.693}***   \\
+& (\num{0})       & (\num{2.03e-252}) \\
+Minutes Spent on Treatment            & \num{0.00564}** & \num{0.00549}*    \\
+& (\num{0.00347}) & (\num{0.0118})    \\
+Num.Obs.                              & \num{3022}      & \num{3022}        \\
+R2                                    & \num{0.633}     & \num{0.678}       \\
+R2 Adj.                               & \num{0.633}     & \num{0.675}       \\
+RMSE                                  & \num{0.21}      & \num{0.20}        \\
+\bottomrule
+\end{talltblr}
+\end{table} 
+
+\begin{table}[H]
+\caption{Average Time Spent on Treatment}
+\centering
+\begin{tabular}[t]{lr}
+\toprule
+Treatment Group & Mean Time (minutes)\\
+\midrule
+Control & 0.123\\
+Domestic Policy Signal & 0.361\\
+Trump Policy Signal & 0.336\\
+Competing Policy Signals & 0.679\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+Even if we conservatively control for time spent on the treatment, the effect of competing signals detected in the original models persists. Furthermore, the effect of time itself is extremely small, though it does reach the conventional threshold for significance. While respondents in the competing signals condition certainly spent more time reading the treatment text, the treatment text had an effect independent of time spent. 
+
+
+\subsection{How Do Different Partisan Groups React to Cues from Home and Abroad?}
+According to \textcite{berinsky_assuming_2007}, whether elites are unified or divided should be the most consequential driver of public support for war at the domestic level. Where do different partisan groups in the UK and Germany stand on the war in Ukraine?
+
+In the United Kingdom, a mainstream, cross-party consensus presented a unified front in support of military aid for Ukraine. The Labour government signed a 100-year partnership agreement with Ukraine in January 2025, which was broadly supported by the Conservative party and Liberal Democrats. Counter-narratives from the opposition were inconsistent and incoherent, marked by a public disagreement between Nigel Farage and Reform UK's Deputy Leader, Richard Tice. Despite Farage's claims that NATO and the EU had provoked Russia's invasion of Ukraine,\footnote{Farage eventually walked back his comments and came out in support of Ukrainian accession to NATO. See \textcite{keate_trumps_2025}} Tice argued that Reform stood \textquote{united} with the rest of the House of Commons in support of Ukraine.\autocite{mason_labour_2025} In Germany, the pattern was slightly different. Prior to the federal election on February 23rd, 2025, the governing coalition was in agreement about the importance of supporting Ukraine with military aid, despite the SPD ruling out the delivery of Taurus cruise missiles. As the leading opposition party, and eventual winner of the 2025 federal election, the CDU campaigned on a notably more hawkish policy towards Russia, including a plan to support Ukraine with more (and further-reaching) weapons. The strongest voices against military aid came from the AfD and the newly-formed BSW, both of which campaigned on a much softer line towards Moscow. While the BSW gained no seats in the federal election, AfD solidified its role as the primary opposition party with 152 seats. The AfD's outspoken opposition to military aid for Ukraine makes it difficult to classify Germany's governing consensus as a mainstream consensus. However, given that all mainstream parties publicly refused to form a coalition with the AfD, the new German government maintained a \emph{governing} consensus in favor of military aid for Ukraine. Some polarization of support for war along party lines may be expected, assuming that Reform UK and AfD voters perceive their party's criticism of military aid as consistent and coherent.\autocite{brader_which_2013} 
+
+The majority of British and German voters might expected to sustain a baseline level of support the Ukrainian war effort based on the predominant policy positions supported by mainstream and governing parties. A sizable minority, however, might very well hold different baseline opinions towards solidarity for Ukraine. The next section examines whether opposition parties react differently to cues from home and abroad. 
+
+\subsubsection{Opposition Voters}
+Tables \ref{tab:opposition_table} and \ref{tab:opposition_table_controls} show the regression results for opposition voters, who indicated that they would vote for the BSW, AfD, or Reform UK in the next election. Stars indicate standard thresholds for significance, and the tables also show the exact p-values in parentheses below the estimate of the average treatment effect. These parties are grouped together because partisan leaders were outspoken in their opposition of military aid for Ukraine (though the leader of Reform eventually reversed his position after a public, internal party dispute). They are therefore the least likely to exhibit a rally effect in response to the domestic government's signal, and the most likely to exhibit a decline in support. 
+
+\begin{table} [H]
+\centering
+\begin{talltblr}[         %% tabularray outer open
+caption={Main Model — Opposition Parties (P-Values in Parentheses)},
+note{}={+ p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+label={tab:opposition_table}]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]},
+column{2,3,4}={}{halign=c,},
+column{1}={}{halign=l,},
+hline{8}={1,2,3,4}{solid, black, 0.05em},
+}                     %% tabularray inner close
+\toprule
+& BSW & AfD & Reform UK \\ \midrule %% TinyTableHeader
+Domestic Signal          & \num{-0.008}  & \num{-0.021}  & \num{-0.008}  \\
+& (\num{0.871}) & (\num{0.368}) & (\num{0.79})  \\
+Trump Signal             & \num{0.039}   & \num{0.02}    & \num{-0.072}* \\
+& (\num{0.406}) & (\num{0.443}) & (\num{0.03})  \\
+Competing Policy Signals & \num{-0.01}   & \num{-0.054}* & \num{-0.044}  \\
+& (\num{0.863}) & (\num{0.047}) & (\num{0.177}) \\
+Num.Obs.                 & \num{104}     & \num{279}     & \num{311}     \\
+R2                       & \num{0.546}   & \num{0.548}   & \num{0.680}   \\
+R2 Adj.                  & \num{0.527}   & \num{0.541}   & \num{0.676}   \\
+RMSE                     & \num{0.48}    & \num{0.49}    & \num{0.20}    \\
+\bottomrule
+\end{talltblr}
+\end{table} 
+
+\begin{table} [H]
+\centering
+\begin{talltblr}[         %% tabularray outer open
+caption={Main Model + Controls — Opposition Parties (P-Values in Parentheses)},
+note{}={+ p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+label={tab:opposition_table_controls}
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]},
+column{2,3,4}={}{halign=c,},
+column{1}={}{halign=l,},
+hline{8}={1,2,3,4}{solid, black, 0.05em},
+}                     %% tabularray inner close
+\toprule
+& BSW & AfD & Reform UK \\ \midrule %% TinyTableHeader
+Domestic Signal          & \num{-0.005}  & \num{-0.027}  & \num{-0.02}   \\
+& (\num{0.92})  & (\num{0.249}) & (\num{0.53})  \\
+Trump Signal             & \num{0.057}   & \num{0.013}   & \num{-0.084}* \\
+& (\num{0.241}) & (\num{0.619}) & (\num{0.016}) \\
+Competing Policy Signals & \num{-0.007}  & \num{-0.059}* & \num{-0.045}  \\
+& (\num{0.906}) & (\num{0.027}) & (\num{0.154}) \\
+Num.Obs.                 & \num{104}     & \num{279}     & \num{311}     \\
+R2                       & \num{0.576}   & \num{0.581}   & \num{0.698}   \\
+R2 Adj.                  & \num{0.536}   & \num{0.567}   & \num{0.689}   \\
+RMSE                     & \num{0.47}    & \num{0.50}    & \num{0.19}    \\
+\bottomrule
+\end{talltblr}
+\end{table}
+
+Across the board, domestic policy signals do not generate a strong backlash among opposition voters. Rather than signaling evidence of a rally effect, it's much more likely that opposition voters are experiencing floor effects. Figure \ref{fig:opposition_means} displays the marginal mean support for military aid of AfD, BSW, and Reform voters who were distributed across different treatment groups in the experiment. AfD and BSW voters are not moved by the domestic government's signal because they are already as unsupportive towards the policy as the Likert scale (1-5) allows. Instead, AfD voters were significantly affected by competing policy signals, and in the same direction as other partisan groups across the experiment. 
+
+Reform voters, on the other hand, become significantly less supportive of military aid when they receive Trump's signal, an effect which is not replicated in the competing signals condition. This would seem to suggest that the domestic signal does seem to counteract some of the negative effect of Trump's signal on Reform voters. This interpretation fits with that we know about Reform's inconsistent rhetoric on the topic of Ukraine. Nevertheless, these results remain exploratory given the small number of respondents across partisan groups, thus limiting the statistical power to detect effects among subgroups. 
+
+\begin{figure} [H]
+\begin{minipage}{0.47\textwidth}
+\includegraphics[width=\linewidth]{Figures/opposition_party_plot.png}
+\end{minipage}
+\hfill
+\begin{minipage}{0.47\textwidth}
+\includegraphics[width=\linewidth]{Figures/marginal_means_german_and_british_opposition.png}
+\end{minipage}
+\caption{Negative Cues Make AfD and Reform Voters More Negative Towards Military Aid}
+    {\scriptsize {Note: Point estimates and confidence intervals are based on the same model specifications described in the regression tables above. Bars represent the 95\% confidence interval. In the graph on the right, the dashed line indicates a neutral opinion towards military aid. Points that fall above the horizontal line indicate a positive opinion, while points below the line indicate a negative opinion towards the government's military aid policy.}}
+    \label{fig:opposition_means}
+\end{figure}
+
+
+\subsubsection{Mainstream Voters}
+Tables \ref{tab:table_germanparties} and \ref{tab:table_ukparties} show the regression results for voters of remaining German and British parties. Stars indicate standard thresholds for significance, and the tables also show the exact p-values in parentheses below the estimate of the average treatment effect. 
+
+Only one party, the FDP, demonstrates a backlash effect against the domestic government's policy signal. This aligns with the political climate at the time of fielding, during which Germany's coalition government had fallen amid a disagreement between the FDP and its coalition partners about the federal debt brake. The negative effect is replicated across other treatment conditions, no matter the policy signal. However, these effects are estimated across a very small sample of voters, and the significance as well as the direction may well be statistical noise. 
+
+Turning to partisan groups with larger sample sizes, Trump's negative policy signal was also persuasive for CDU voters. This is surprising given the theoretical expectations about audience costs in alliances, as well as the fact that the CDU was campaigning on a more extensive military aid policy. The negative effect of Trump's signal is washed out in the competing signals condition, indicating that the CDU's policy signal did rally citizens to jump back on the military aid bandwagon. 
+
+\begin{table} [H]
+\centering
+\footnotesize
+\begin{talltblr}[         %% tabularray outer open
+caption={Main Model — German Parties (P-Values in Parentheses)},
+note{}={+ p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+label={tab:table_germanparties}]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]Q[]},
+column{2,3,4,5,6}={}{halign=c,},
+column{1}={}{halign=l,},
+hline{8}={1,2,3,4,5,6}{solid, black, 0.05em},
+}                     %% tabularray inner close
+\toprule
+& Die Linke & Die Grünen & SPD & CDU/CSU & FDP \\ \midrule %% TinyTableHeader
+Domestic Signal          & \num{0.027}   & \num{0.036}   & \num{-0.03}   & \num{0.038}    & \num{-0.16}*   \\
+& (\num{0.607}) & (\num{0.231}) & (\num{0.46})  & (\num{0.224})  & (\num{0.019})  \\
+Trump Signal             & \num{0.054}   & \num{0.051}   & \num{-0.059}  & \num{-0.087}** & \num{-0.16}**  \\
+& (\num{0.309}) & (\num{0.138}) & (\num{0.14})  & (\num{0.009})  & (\num{0.006})  \\
+Competing Policy Signals & \num{-0.033}  & \num{-0.012}  & \num{-0.003}  & \num{0.003}    & \num{-0.174}** \\
+& (\num{0.569}) & (\num{0.7})   & (\num{0.942}) & (\num{0.913})  & (\num{0.002})  \\
+Num.Obs.                 & \num{83}      & \num{210}     & \num{215}     & \num{281}      & \num{49}       \\
+R2                       & \num{0.653}   & \num{0.651}   & \num{0.478}   & \num{0.701}    & \num{0.777}    \\
+R2 Adj.                  & \num{0.635}   & \num{0.644}   & \num{0.468}   & \num{0.696}    & \num{0.756}    \\
+RMSE                     & \num{0.19}    & \num{0.16}    & \num{0.21}    & \num{0.19}     & \num{0.16}     \\
+\bottomrule
+\end{talltblr}
+\end{table} 
+
+\begin{table}[H]
+\centering
+\footnotesize
+\begin{talltblr}[         %% tabularray outer open
+caption={Main Model — UK Parties (P-Values in Parentheses)},
+note{}={+ p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+label={tab:table_ukparties}]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]},
+column{2,3,4,5}={}{halign=c,},
+column{1}={}{halign=l,},
+hline{8}={1,2,3,4,5}{solid, black, 0.05em},
+}                     %% tabularray inner close
+\toprule
+& Green & Labour & LibDem & Conservative \\ \midrule %% TinyTableHeader
+Domestic Signal          & \num{-0.035}  & \num{-0.029}  & \num{-0.008}  & \num{0.029}   \\
+& (\num{0.54})  & (\num{0.373}) & (\num{0.888}) & (\num{0.57})  \\
+Trump Signal             & \num{-0.12}*  & \num{-0.018}  & \num{-0.014}  & \num{-0.025}  \\
+& (\num{0.016}) & (\num{0.633}) & (\num{0.798}) & (\num{0.641}) \\
+Competing Policy Signals & \num{-0.095}+ & \num{-0.021}  & \num{-0.074}  & \num{-0.026}  \\
+& (\num{0.056}) & (\num{0.53})  & (\num{0.22})  & (\num{0.621}) \\
+Num.Obs.                 & \num{130}     & \num{385}     & \num{135}     & \num{178}     \\
+R2                       & \num{0.557}   & \num{0.303}   & \num{0.338}   & \num{0.333}   \\
+R2 Adj.                  & \num{0.542}   & \num{0.295}   & \num{0.317}   & \num{0.318}   \\
+RMSE                     & \num{0.21}    & \num{0.23}    & \num{0.24}    & \num{0.25}    \\
+\bottomrule
+\end{talltblr}
+\end{table} 
+
+When controls are added to the models, the German Green party appears to be the only group of partisan voters that are positively and significantly rallied by the domestic government's signal. This is the clearest evidence of a domestic rally effect across party groups in the experiment, and it aligns with the German Green party's staunch rhetoric in support of military aid for Ukraine, including the delivery of heavy, long-range weapons. However, sample sizes are still very small, and this subgroup analysis remains exploratory in order to investigate potential heterogeneous effects. Future research would need to select partisan respondents at a much larger scale in order to have the necessary statistical power to calculate effects with more certainty. 
+
+\begin{table}[H]
+\centering
+\footnotesize
+\begin{talltblr}[         %% tabularray outer open
+caption={Main Model + Controls — German Parties (P-Values in Parentheses)},
+note{}={+ p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+label={tab:table_germanparties_controls}]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]Q[]},
+column{2,3,4,5,6}={}{halign=c,},
+column{1}={}{halign=l,},
+hline{8}={1,2,3,4,5,6}{solid, black, 0.05em},
+}                     %% tabularray inner close
+\toprule
+& Die Linke & Die Grünen & SPD & CDU/CSU & FDP \\ \midrule %% TinyTableHeader
+Domestic Signal          & \num{0.02}    & \num{0.071}*  & \num{-0.042}  & \num{0.027}   & \num{-0.173}*   \\
+& (\num{0.722}) & (\num{0.019}) & (\num{0.273}) & (\num{0.346}) & (\num{0.012})   \\
+Trump Signal             & \num{0.063}   & \num{0.068}*  & \num{-0.065}+ & \num{-0.071}* & \num{-0.165}*   \\
+& (\num{0.243}) & (\num{0.037}) & (\num{0.093}) & (\num{0.024}) & (\num{0.034})   \\
+Competing Policy Signals & \num{-0.056}  & \num{-0.003}  & \num{-0.012}  & \num{0.002}   & \num{-0.165}*** \\
+& (\num{0.341}) & (\num{0.928}) & (\num{0.765}) & (\num{0.933}) & (\num{0.001})   \\
+Num.Obs.                 & \num{83}      & \num{210}     & \num{215}     & \num{281}     & \num{49}        \\
+R2                       & \num{0.675}   & \num{0.702}   & \num{0.531}   & \num{0.742}   & \num{0.834}     \\
+R2 Adj.                  & \num{0.635}   & \num{0.689}   & \num{0.510}   & \num{0.733}   & \num{0.796}     \\
+RMSE                     & \num{0.19}    & \num{0.15}    & \num{0.20}    & \num{0.18}    & \num{0.14}      \\
+\bottomrule
+\end{talltblr}
+\end{table} 
+
+
+\begin{table}[H]
+\centering
+\footnotesize
+\begin{talltblr}[         %% tabularray outer open
+caption={Main Model + Controls — UK Parties (P-Values in Parentheses)},
+note{}={+ p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+label={tab:table_ukparties_controls}]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]},
+column{2,3,4,5}={}{halign=c,},
+column{1}={}{halign=l,},
+hline{8}={1,2,3,4,5}{solid, black, 0.05em},
+}                     %% tabularray inner close
+\toprule
+& Green & Labour & LibDem & Conservative \\ \midrule %% TinyTableHeader
+Domestic Signal          & \num{-0.03}   & \num{-0.029}  & \num{0.003}   & \num{0.06}    \\
+& (\num{0.614}) & (\num{0.373}) & (\num{0.96})  & (\num{0.201}) \\
+Trump Signal             & \num{-0.117}* & \num{-0.016}  & \num{-0.004}  & \num{-0.026}  \\
+& (\num{0.014}) & (\num{0.66})  & (\num{0.935}) & (\num{0.628}) \\
+Competing Policy Signals & \num{-0.077}  & \num{-0.017}  & \num{-0.029}  & \num{-0.008}  \\
+& (\num{0.122}) & (\num{0.613}) & (\num{0.608}) & (\num{0.871}) \\
+Num.Obs.                 & \num{130}     & \num{385}     & \num{135}     & \num{178}     \\
+R2                       & \num{0.601}   & \num{0.333}   & \num{0.383}   & \num{0.411}   \\
+R2 Adj.                  & \num{0.571}   & \num{0.317}   & \num{0.338}   & \num{0.380}   \\
+RMSE                     & \num{0.20}    & \num{0.22}    & \num{0.23}    & \num{0.23}    \\
+\bottomrule
+\end{talltblr}
+\end{table} 
+
+
+A visualization of marginal mean support for military aid helps to compare how baseline support for military aid differs across partisans from both countries. In Figure \ref{fig:other_marginalmeans}, we can see that the majority of UK partisans remain supportive of aid for Ukraine, regardless of which policy signal they received in the experiment. The one exception are Green voters, though this was also a small proportion of the sample. The picture is more complicated in Germany, where CDU voters lean in favor of increasing military aid when they receive the domestic policy signal, but oppose the same policy when they receive Trump's negative signal. The significant, negative effect of the Trump signal on CDU voters therefore represents a meaningful qualitative shift in opinion. 
+
+\begin{figure} [H]
+\begin{minipage}{0.47\textwidth}
+\includegraphics[width=\linewidth]{Figures/marginal_means_other_german.png}
+\end{minipage}
+\hfill
+\begin{minipage}{0.47\textwidth}
+\includegraphics[width=\linewidth]{Figures/marginal_means_other_uk.png}
+\end{minipage}
+\caption{Marginal Mean Support for Military Aid Across UK and British Parties}
+{\scriptsize {Note: Point estimates and confidence intervals are based on the same model specifications described in the regression tables above. Thinner bars represent the 95\% confidence interval, and thicker bars represent the 90\% confidence interval. The dashed line indicates a neutral opinion towards military aid. Points that fall above the line indicate a positive opinion, while points below the line indicate a negative opinion towards the government's military aid policy.}}
+\label{fig:other_marginalmeans}
+\end{figure}
+
+\subsection{Competing Cues Decrease Support for Aid Among Hawkish Respondents}
+To determine whether foreign leaders create a permissive dissensus when they backtrack on commitments to embattled allies, it is important to investigate how these signals are received by citizens with different foreign policy postures. The literature on foreign policy postures tends to classify three core orientations towards global affairs: isolationism, cooperative internationalism, and militant internationalism.\autocite{hurwitz_how_1987, wittkopf_faces_1990, reifler_foreign_2011, kertzer_moral_2014, rathbun_taking_2016, gravelle_structure_2017} 
+
+These postures act as schemas and allow individuals to formulate specific policy opinions when confronted with new information or changing circumstances. Cooperative internationalism is often associated with dovishness, but it is more broadly defined by a generally globalist or egalitarian approach to international affairs, with a motivation to avoiding harm, ensure fairness, and commit to shared principles. Militant internationalism is otherwise associated with a hawkish approach to international affairs, motivated by a responsibility to protect the ingroup from threats and conserve tradition and security \autocite{rathbun_towards_2020}. Though isolationism was previously understood as an opposition to both militant and cooperative internationalism \autocite{wittkopf_foreign_1986}, scholars remain puzzled by the psychological origins of isolationist preferences \autocite{rathbun_towards_2020}. However, existing evidence suggests that while militant internationalists may choose to \enquote{fight} when confronted with external threats to the ingroup, isolationism is the alternative \enquote{flight} reaction driven by a sense of threat in the international system \autocite{kertzer_making_2013}. That said, conservation values and a concern for harm to the ingroup have also been shown to be marginal predictors of the desire to withdraw from international affairs\autocite{rathbun_taking_2016}.
+
+Importantly, these postures offer competing expectations for how the public may react to policy signals about military aid from home and abroad. On the one hand, cooperative internationalists may feel a stronger obligation to fulfill alliance obligations to an embattled ally which has been unfairly invaded by an authoritarian aggressor. Citizens with this underlying value structure would be the most likely source of alliance audience costs when an allied leader backs out on NATO commitments to Ukraine, leaving European states to foot the bill. On the other hand, cooperative internationalists may also be morally averse to using military aid as a method of intervention in global affairs.\footnote{This dichotomy of cooperative internationalism is best represented by internationalists and accommodationists in Wittkopf's (1986) model of foreign policy belief systems.} Indeed, most survey battery items designed to tap into cooperative internationalism focus on the preference for diplomacy, cooperation, multilateralism, and international consensus \autocite{gravelle_structure_2017}. If cooperative internationalists strongly prefer diplomacy over military intervention, they may be less likely to punish leaders who halt military aid on the pretense of ending a war, despite the downstream consequences it may bring for the embattled ally. To ease interpretation, the survey item for cooperative internationalism was designed to capture a more distinct preference for the use of diplomacy over the use of force.
+
+Militant internationalism is typically measured by an individual's willingness to use force and exude military strength in order to achieve foreign policy objectives, thus serving as a foil to cooperative internationalism when it is measured as a preference for diplomacy \autocite{gravelle_structure_2017}. While militant internationalists may be more eager than most to use force to help an ally, some militant internationalists may prefer to shore up strength and preserve military resources at home. However, most survey battery items that are designed to tap into militant attitudes are constructed to capture a more extroverted and assertive approach to international affairs. Doing so helps to keep militant internationalists separate from isolationists, who may support defensive policies, but not offensive policies. Isolationists are understandably the least likely to support increased engagement in a conflict with Russia. Hence, policy signals in favor of increasing military aid are unlikely to persuade isolationist individuals to increase military aid and effectively become more involved in an ongoing military intervention. Moreover, policy signals about halting military aid will likely face floor effects among individuals who are already resistant to engage in global conflicts. 
+
+\begin{table} [H]
+\centering
+\footnotesize
+\begin{talltblr}[         %% tabularray outer open
+caption={Treatment Effects Among Posture Subgroups (P-Values in Parentheses)},
+note{}={+ p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+label={tab:posture_effects_table}]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]},
+column{2,3,4}={}{halign=c,},
+column{1}={}{halign=l,},
+hline{8}={1,2,3,4}{solid, black, 0.05em},
+}                     %% tabularray inner close
+\toprule
+& Cooperative Internationalists & Militant Internationalists & Isolationists \\ \midrule %% TinyTableHeader
+Domestic Signal          & \num{-0.011}  & \num{-0.018}  & \num{-0.013}  \\
+& (\num{0.404}) & (\num{0.173}) & (\num{0.436}) \\
+Trump Signal             & \num{-0.004}  & \num{-0.022}  & \num{-0.012}  \\
+& (\num{0.8})   & (\num{0.11})  & (\num{0.509}) \\
+Competing Policy Signals & \num{-0.021}  & \num{-0.033}* & \num{-0.019}  \\
+& (\num{0.133}) & (\num{0.012}) & (\num{0.293}) \\
+Num.Obs.                 & \num{1891}    & \num{2097}    & \num{1085}    \\
+R2                       & \num{0.600}   & \num{0.592}   & \num{0.530}   \\
+R2 Adj.                  & \num{0.600}   & \num{0.591}   & \num{0.528}   \\
+RMSE                     & \num{0.22}    & \num{0.22}    & \num{0.21}    \\
+\bottomrule
+\end{talltblr}
+\end{table} 
+
+Table \ref{tab:posture_effects_table} depicts the effects of each policy signal on a subgroup of respondents who scored highly on battery items related to each of the three foreign policy postures. 
+Below each coefficient, the exact p-value of the estimate is included in parentheses. Isolationists are not moved by any of the policy signals, which aligns with the common wisdom about the persuasive power of elite cues among individuals with crystallized opinions. The fact that neither negative policy signals from the Trump Administration nor competing signals moved isolationists to become even more opposed to military aid is an interesting finding in itself. A similar pattern appears for cooperative internationalists: though the estimate for the competing policy signals looks as if it may be moving in a negative direction, it fails to reach the standard 95\% significance threshold for statistical inference. Individuals who caution the use of the military and strongly believe in diplomacy were simply not influenced by policy signals that implied that increasing or decreasing military aid was the best way to end the war in Ukraine. 
+
+The most interesting results are those of the militant internationalists, who believe that their country needs a strong military in order to be effective in international affairs. Militant internationalists exhibited a 3.3\% decrease in support for military aid to Ukraine when exposed to the competing cues treatment. This effect mirrors the effect detected in the main model. The most hawkish respondents, who theoretically should support the use military force to intervene and demonstrate resolve against Russian aggression, are seemingly dissuaded when the US signals that there is a dissensus within NATO's coalition of the willing.
+
+
+\subsection{Is Support for Military Aid Conditioned on Beliefs About Effectiveness?}
+So far, the analysis has suggested that competing cues within an alliance can create a permissive dissensus. One potential explanation for why Trump's withdrawal from NATO's coalition of the willing may permit aid opposition at the public opinion level is that citizens become less certain about whether sending military aid will be effective at ending the conflict and establishing peace.  
+
+There are two potential ways to model this relationship in the data. The first is by assessing whether the policy signals themselves influenced beliefs about the effectiveness of military aid. Table \ref{tab:treatment_effective} shows that none of the policy signals had a consistent effect on respondents' beliefs about whether military aid would create lasting peace in Ukraine. However, R2 value indicates that the model is a poor fit for the data, and does not help us understand the relationship between beliefs about effectiveness and support for military aid. The second model in Table \ref{tab:treatment_effective} includes effectiveness as a control in the main model, which improves the R2 and explains a significant portion of the variance in the sample. The more strongly respondents believe that military aid can help end the war, the more likely they are to support the domestic government's Ukraine aid policy. 
+
+\begin{table} [H]
+\centering
+\footnotesize
+\begin{talltblr}[         %% tabularray outer open
+caption={Treatment Effect on Beliefs about Aid Effectiveness (P-Values in Parentheses)},
+note{}={+ p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+label={tab:treatment_effective}]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]},
+column{2,3}={}{halign=c,},
+column{1}={}{halign=l,},
+hline{12}={1,2,3}{solid, black, 0.05em},
+}                     %% tabularray inner close
+\toprule
+& Belief that Military Aid is Effective & Support for Increasing Mil. Aid \\ \midrule %% TinyTableHeader
+Domestic Signal                       & \num{0.018}   & \num{-0.015}    \\
+& (\num{0.316}) & (\num{0.127})   \\
+Trump Signal                          & \num{0.006}   & \num{-0.022}*   \\
+& (\num{0.748}) & (\num{0.034})   \\
+Competing Policy Signals              & \num{0.005}   & \num{-0.029}**  \\
+& (\num{0.759}) & (\num{0.003})   \\
+Belief that Military Aid is Effective &                & \num{0.328}***  \\
+&                & (\num{0})       \\
+Pre-Treatment Opinion on Military Aid &                & \num{-0.654}*** \\
+&                & (\num{0})       \\
+Num.Obs.                              & \num{3029}    & \num{3022}      \\
+R2                                    & \num{0.000}   & \num{0.690}     \\
+R2 Adj.                               & \num{-0.001}  & \num{0.690}     \\
+RMSE                                  & \num{0.34}    & \num{0.19}      \\
+\bottomrule
+\end{talltblr}
+\end{table} 
+
+\subsection{Do Policy Signals about Military Aid Affect Government Approval?}
+Policy signals about increasing military aid for Ukraine may also have a direct effect on respondents' overall approval of their government and approval of the Trump Administration. These variables appeared in the post-treatment section of the questionnaire, allowing the model to test for the effect of policy signals about military aid on approval. Below, Tables \ref{tab:gov_support_germany} and \ref{tab:gov_support_uk} display regression results with robust standard errors, and exact p-values in parentheses below the regression coefficient. The base model has an R2 value close to zero, but the model fit is improved with the addition of pre-treatment control variables. Political interest and disengagement from politics were added to these models, given the theoretical likelihood that both variables at least partially explain approval of the domestic government and of Donald Trump. Prior to running the models, correlation between these two covariates was found to be -0.249, lowering concern about multicollinearity in the model. 
+
+Across both countries, vote intention and disengagement from politics had the largest and most significant effects on both government approval and approval of Donald Trump. None of the treatment conditions had a significant effect on either government approval or approval of Donald Trump. 
+\newpage
+\begin{table}[H]
+\centering
+\scriptsize
+\begin{talltblr}[         %% tabularray outer open
+caption={Regression Results for Government Approval — Germany},
+note{}={+ p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+label={tab:gov_support_germany}]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]},
+column{2,3,4,5}={}{halign=c,},
+column{1}={}{halign=l,},
+hline{44}={1,2,3,4,5}{solid, black, 0.05em},
+}                     %% tabularray inner close
+\toprule
+& Gov Approval & Gov Approval + Controls & Trump Approval & Trump Approval + Controls \\ \midrule %% TinyTableHeader
+Domestic Signal              & \num{-0.0157}  & \num{-0.00736}   & \num{-0.0255} & \num{-0.0161}     \\
+& (\num{0.426})  & (\num{0.62})     & (\num{0.287}) & (\num{0.355})     \\
+Trump Signal                 & \num{-0.00355} & \num{0.0116}     & \num{-0.0034} & \num{-0.00751}    \\
+& (\num{0.858})  & (\num{0.434})    & (\num{0.888}) & (\num{0.665})     \\
+Competing Policy Signals     & \num{0.000888} & \num{-0.00229}   & \num{-0.0131} & \num{0.000569}    \\
+& (\num{0.964})  & (\num{0.875})    & (\num{0.572}) & (\num{0.974})     \\
+Age                          &                 & \num{-0.000181}  &                & \num{-0.00218}*** \\
+&                 & (\num{0.61})     &                & (\num{7.17e-08})  \\
+Gender (Male)                &                 & \num{0.0169}     &                & \num{0.0578}***   \\
+&                 & (\num{0.126})    &                & (\num{5.26e-06})  \\
+Will Vote: Prefer Not to Say &                 & \num{0.0448}     &                & \num{0.0125}      \\
+&                 & (\num{0.288})    &                & (\num{0.799})     \\
+Will Vote: Other             &                 & \num{-0.0199}    &                & \num{-0.0307}     \\
+&                 & (\num{0.484})    &                & (\num{0.397})     \\
+Will Vote: Would Not Vote    &                 & \num{-0.0326}    &                & \num{0.11}*       \\
+&                 & (\num{0.438})    &                & (\num{0.0345})    \\
+Will Vote: AfD               &                 & \num{-0.14}***   &                & \num{0.283}***    \\
+&                 & (\num{2.74e-09}) &                & (\num{1.53e-22})  \\
+Will Vote: CDU/CSU           &                 & \num{-0.0246}    &                & \num{-0.00235}    \\
+&                 & (\num{0.287})    &                & (\num{0.928})     \\
+Will Vote: SPD               &                 & \num{0.201}***   &                & \num{-0.0803}**   \\
+&                 & (\num{2.12e-15}) &                & (\num{0.00204})   \\
+Will Vote: Die Linke         &                 & \num{0.0626}*    &                & \num{-0.154}***   \\
+&                 & (\num{0.0413})   &                & (\num{1.42e-06})  \\
+Will Vote: BSW               &                 & \num{-0.0658}*   &                & \num{0.0314}      \\
+&                 & (\num{0.0234})   &                & (\num{0.383})     \\
+Will Vote: Die Grünen        &                 & \num{0.159}***   &                & \num{-0.124}***   \\
+&                 & (\num{8.47e-10}) &                & (\num{1.11e-06})  \\
+Will Vote: FDP               &                 & \num{-0.0125}    &                & \num{0.0942}*     \\
+&                 & (\num{0.729})    &                & (\num{0.0333})    \\
+Will Vote: Ineligible        &                 & \num{0.0412}     &                & \num{-0.017}      \\
+&                 & (\num{0.675})    &                & (\num{0.866})     \\
+Cooperative Internationalism &                 & \num{-0.00403}   &                & \num{0.0381}      \\
+&                 & (\num{0.859})    &                & (\num{0.224})     \\
+Militant Internationalism    &                 & \num{0.0198}     &                & \num{-0.118}***   \\
+&                 & (\num{0.297})    &                & (\num{2.61e-06})  \\
+Isolationism                 &                 & \num{-0.106}***  &                & \num{0.283}***    \\
+&                 & (\num{2.09e-07}) &                & (\num{1.1e-29})   \\
+Political Interest           &                 & \num{-0.0189}    &                & \num{0.0829}**    \\
+&                 & (\num{0.37})     &                & (\num{0.00144})   \\
+Disengagement From Politics  &                 & \num{-0.234}***  &                & \num{0.00474}     \\
+&                 & (\num{3.7e-25})  &                & (\num{0.846})     \\
+Num.Obs.                     & \num{1501}     & \num{1501}       & \num{1501}    & \num{1501}        \\
+R2                           & \num{0.001}    & \num{0.426}      & \num{0.001}   & \num{0.470}       \\
+R2 Adj.                      & \num{-0.001}   & \num{0.418}      & \num{-0.001}  & \num{0.463}       \\
+RMSE                         & \num{0.27}     & \num{0.20}       & \num{0.32}    & \num{0.23}        \\
+\bottomrule
+\end{talltblr}
+\end{table}
+
+\begin{table}[H]
+\centering
+\scriptsize
+\begin{talltblr}[         %% tabularray outer open
+caption={Regression Results for Government Approval — UK},
+note{}={+ p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+label={tab:gov_support_uk}]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]},
+column{2,3,4,5}={}{halign=c,},
+column{1}={}{halign=l,},
+hline{42}={1,2,3,4,5}{solid, black, 0.05em},
+}                     %% tabularray inner close
+\toprule
+& Gov Approval & Gov Approval + Controls & Trump Approval & Trump Approval + Controls \\ \midrule %% TinyTableHeader
+Domestic Signal              & \num{0.0148} & \num{0.0245}      & \num{0.00233} & \num{0.00631}    \\
+& (\num{0.52}) & (\num{0.16})      & (\num{0.931}) & (\num{0.763})    \\
+Trump Signal                 & \num{0.0187} & \num{0.0233}      & \num{0.00514} & \num{0.019}      \\
+& (\num{0.41}) & (\num{0.172})     & (\num{0.85})  & (\num{0.373})    \\
+Competing Policy Signals     & \num{0.0116} & \num{0.027}       & \num{-0.0148} & \num{-0.00402}   \\
+& (\num{0.61}) & (\num{0.123})     & (\num{0.577}) & (\num{0.847})    \\
+Age                          &               & \num{-0.00256}*** &                & \num{-0.0046}*** \\
+&               & (\num{4.8e-12})   &                & (\num{4.26e-23}) \\
+Gender (Male)                &               & \num{0.0177}      &                & \num{0.0611}***  \\
+&               & (\num{0.157})     &                & (\num{6.75e-05}) \\
+Will Vote: Don't Know        &               & \num{0.0649}*     &                & \num{-0.188}***  \\
+&               & (\num{0.0176})    &                & (\num{4.59e-10}) \\
+Will Vote: Green             &               & \num{-0.0215}     &                & \num{-0.384}***  \\
+&               & (\num{0.495})     &                & (\num{1.86e-34}) \\
+Will Vote: Reform UK         &               & \num{-0.179}***   &                & \num{0.209}***   \\
+&               & (\num{6.11e-14})  &                & (\num{7.43e-12}) \\
+Will Vote: LibDem            &               & \num{0.147}***    &                & \num{-0.265}***  \\
+&               & (\num{4.08e-06})  &                & (\num{3.82e-14}) \\
+Will Vote: Prefer Not to Say &               & \num{0.18}***     &                & \num{-0.0634}    \\
+&               & (\num{0.000546})  &                & (\num{0.274})    \\
+Will Vote: Other             &               & \num{0.016}       &                & \num{-0.164}**   \\
+&               & (\num{0.774})     &                & (\num{0.00499})  \\
+Will Vote: Labour            &               & \num{0.3}***      &                & \num{-0.223}***  \\
+&               & (\num{1.08e-31})  &                & (\num{1.29e-15}) \\
+Will Vote: Would Not Vote    &               & \num{0.0403}      &                & \num{-0.164}***  \\
+&               & (\num{0.229})     &                & (\num{0.000106}) \\
+Will Vote: SNP               &               & \num{0.0486}      &                & \num{-0.27}***   \\
+&               & (\num{0.414})     &                & (\num{2.79e-08}) \\
+Will Vote: Plaid Cymru       &               & \num{-0.0826}     &                & \num{-0.33}***   \\
+&               & (\num{0.171})     &                & (\num{8.74e-07}) \\
+Cooperative Internationalism &               & \num{-0.00773}    &                & \num{0.00522}    \\
+&               & (\num{0.787})     &                & (\num{0.886})    \\
+Militant Internationalism    &               & \num{0.0235}      &                & \num{0.132}***   \\
+&               & (\num{0.396})     &                & (\num{6.18e-05}) \\
+Isolationism                 &               & \num{-0.119}***   &                & \num{0.27}***    \\
+&               & (\num{1.1e-07})   &                & (\num{2.36e-22}) \\
+Political Interest           &               & \num{-0.0475}+    &                & \num{0.0862}**   \\
+&               & (\num{0.0734})    &                & (\num{0.00871})  \\
+Disengagement From Politics  &               & \num{-0.127}***   &                & \num{-0.0678}*   \\
+&               & (\num{2.49e-07})  &                & (\num{0.0135})   \\
+Num.Obs.                     & \num{1528}   & \num{1528}        & \num{1528}    & \num{1528}       \\
+R2                           & \num{0.000}  & \num{0.443}       & \num{0.000}   & \num{0.408}      \\
+R2 Adj.                      & \num{-0.001} & \num{0.435}       & \num{-0.002}  & \num{0.400}      \\
+RMSE                         & \num{0.31}   & \num{0.23}        & \num{0.37}    & \num{0.28}       \\
+\bottomrule
+\end{talltblr}
+\end{table}
+
+\section{Open-Ended Response Analysis}
+\subsection{Hand-Coding Open Response Data}
+All 3029 open-ended responses were hand-coded abductively using a mixed-membership system. That means that each response entry is treated as a unique text containing one or more arguments. For example, consider the following response:
+
+\blockquote{\textit{In an ideal world, I would like the British Government to increase military aid to whatever is needed to help with ending the war, however, the UK is already struggling to fund public services due to 14 years of abysmal Conservative governance which cannot be over looked. The UK and Europe must stand united and firm behind Ukraine against Russian aggression, and under no circumstances appease Putin.}}
+
+The text contains two negative arguments about \enquote{abysmal Conservative governance} and underfunded public services. However, it also includes three positive arguments about the UK and Europe showing a united front, supporting Ukraine with \enquote{whatever is needed}, and standing up to Russian aggression. Each of these distinct arguments were coded separately, capturing the full complexity of the argument. The following categories were coded within this response: \textit{blame the government, we need help at home, solidarity for Ukraine, band together,} and \textit{send a message to Putin}.
+
+The mixed membership coding scheme allows for a more informative analysis of overall argument prevalence, as well as the most prevalent arguments within each country sample. Argument categories were also classified as conveying positive, negative, or neutral sentiment towards increasing military aid. Of the 60 unique categories, 13 occurred more than 100 times across the dataset, making them more prevalent than other residual categories. Figure \ref{fig:argument_sentiment} ranks the the most prevalent positive and negative arguments used across the full sample of 2850 open-ended responses, as well as disaggregated by country. 
+
+\begin{figure} [H]
+\begin{minipage}{0.47\textwidth}
+\includegraphics[width=\linewidth]{Figures/prevalence_plot.png}
+\end{minipage}
+\hfill
+\begin{minipage}{0.47\textwidth}
+\includegraphics[width=\linewidth]{Figures/prevalence_by_country_plot.png}
+\end{minipage}
+\caption{Most Prevalent Positive and Negative Arguments, Aggregate and by Country}
+\label{fig:argument_sentiment}
+\end{figure}
+\newpage
+After the sixty unique argument categories were identified, arguments were grouped together into ten larger themes. Table \ref{tab:argumentthemes} presents these themes, alongside the specific argument topics that constitute each theme. The number of occurrences is also indicated. In order to be counted as an occurrence, the text contained at least one of the specific arguments within the overarching theme.
+
+\begin{table}[H]
+\centering
+\scriptsize
+\caption{Argument Themes and Occurrences}
+\label{tab:argumentthemes}
+\begin{tabular}{p{3.5cm} r p{3.5cm} p{6cm}}
+\toprule
+Theme & Occurrences & Definition & Includes These Specific Arguments\\
+\midrule
+\cellcolor{gray!10}{Domestic Cost \& Other Priorities} & \cellcolor{gray!10}{737} & \cellcolor{gray!10}{Grievances towards the domestic and material tradeoffs of sending military aid, including other government priorities that need more attention.} & \cellcolor{gray!10}{``Domestic economic costs'', ``We need help at home'', ``Preserve army resources'', ``We've helped enough'', ``Ukraine should pay for weapons'', ``Pay attention to other global crises'', ``Our government is to blame''}\\[6pt]
+Aid is Not Prudent & 763 & Concern about whether military aid from Germany and the UK will actually help bring an end to the conflict, including preferences for deescalation and a negotiated peace. & ``Aid hasn't worked so far'', ``Weapons prolong war'', ``Ukraine can't win'', ``We should send other forms of aid'', ``Can't replace USA'', ``We can't do it alone'', ``Peace now'', ``Avoid escalation'', ``Support Trump's Peace Plan''\\[6pt]
+\cellcolor{gray!10}{Not Our War} & \cellcolor{gray!10}{207} & \cellcolor{gray!10}{Respondents feel that the war in Ukraine is removed from German or British interests, and the government therefore has no obligation to intervene militarily or financially.} & \cellcolor{gray!10}{``Not our war'', ``No mutual obligation to Ukraine'', ``No troops''}\\[6pt]
+Pro-Russia / Anti-Ukraine Sentiment & 89 & Respondent disagrees with the notion of supporting Ukraine with aid, and they express positive feelings towards Russia or negative feelings towards Ukraine. & ``Support Russia'', ``Ukraine is to blame'', ``Disdain for Ukrainians'', ``NATO expansion provoked Russia'', ``Russian war narratives'', ``Conspiracy about Ukrainian government'', ``No NATO membership for Ukraine''\\[6pt]
+\cellcolor{gray!10}{Moral Opposition to War} & \cellcolor{gray!10}{90} & \cellcolor{gray!10}{Respondents express a principled moral objection to financing warfare, regardless of the strategic or political context.} & \cellcolor{gray!10}{``Moral opposition''}\\[6pt]
+Strategic Arguments for Aid & 716 & Strategic concerns about deterrence, containment, and the necessity of sending more military aid to end the war. & ``Prevent expansion'', ``The war threatens my country'', ``Russia must not win'', ``Ukraine must deter Russia'', ``Ukraine should not be allowed to attack Russia'', ``Ukraine needs more weapons to fight back and end the war'', ``Send aid to stop the war from dragging on'', ``Training Ukrainian soldiers'', ``We've been too passive'', ``Boots on the ground'', ``Strengthen Ukraine's negotiation position'', ``Negotiations won't lead to peace''\\[6pt]
+\cellcolor{gray!10}{Solidarity Arguments} & \cellcolor{gray!10}{805} & \cellcolor{gray!10}{Arguments in favor of showing solidarity with Ukraine and standing up for liberal democratic norms in the face of autocratic aggression.} & \cellcolor{gray!10}{``Solidarity for Ukraine'', ``Duty to help Ukraine'', ``For freedom democracy stability'', ``Learn from history'', ``Disgusted by Putin'', ``Strengthen foreign relationships'', ``My country should play a better leadership role'', ``Let Ukraine join NATO'', ``Send a message to Putin'', ``Send a message to other dictators: China, N. Korea, Iran''}\\[6pt]
+Anti-Trump / Pro-European Autonomy & 172 & Calls for more European cohesion in light of the US withdrawal of support from Ukraine. & ``Distrust of US/Trump'', ``Stand up to Trump'', ``To fill the gap left by the US'', ``Band together''\\[6pt]
+\cellcolor{gray!10}{Ambivalence} & \cellcolor{gray!10}{277} & \cellcolor{gray!10}{Respondents express ambivalence towards military aid policy, or argue that they are too uninformed to have an opinion.} & \cellcolor{gray!10}{``It depends'', ``Too complex'', ``There's no right decision'', ``Indifference'', ``If need be we must strike the right balance'', ``Government decides, not me''}\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Proportions of Manually-Coded Themes}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Figures/proportion_theme_treated.png}
+    \caption{Proportions of Themes, Treated versus Non-Treated Respondents}
+    \label{fig:proportions_treated_vs_control}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Figures/treated_proportion_plot.png}
+    \caption{Proportions of Themes by Country, Treated versus Non-Treated Respondents}
+    \label{fig:proportions_treated_vs_control_country}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Figures/treatment_proportion_plot.png}
+    \caption{Proportions of Themes by Country and Treatment Group}
+    \label{fig:proportions_treatmentgroup_country}
+\end{figure}
+
+\subsection{Regression Tables: Probability of Invoking Argument Themes}
+\subsubsection{Aggregate Sample}
+The following regression tables refer to the marginal effect on the likelihood that a respondent invokes an argument theme. Below, the regression tables report treatment effects on the probability of forming an argument from two clusters: \textit{Not Our War}, and \textit{Solidarity Arguments}. 
+
+\begin{table}[H]
+\centering
+\begin{talltblr}[         %% tabularray outer open
+caption={Probability of Invoking Theme - Solidarity Arguments},
+note{}={+ p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+label={tab:solidarity}]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]},
+column{2,3}={}{halign=c,},
+column{1}={}{halign=l,},
+hline{20}={1,2,3}{solid, black, 0.05em},
+}                     %% tabularray inner close
+\toprule
+& Main Model & With Controls \\ \midrule %% TinyTableHeader
+Domestic Signal                       & \num{-0.0545}**   & \num{-0.05}*     \\
+& (\num{0.00889})   & (\num{0.0141})   \\
+Trump Signal                          & \num{-0.027}      & \num{-0.0234}    \\
+& (\num{0.205})     & (\num{0.258})    \\
+Competing Policy Signals              & \num{-0.0669}**   & \num{-0.0594}**  \\
+& (\num{0.00118})   & (\num{0.00334})  \\
+Age                                   &                    & \num{-0.000778}+ \\
+&                    & (\num{0.0884})   \\
+Gender (Male)                         &                    & \num{-0.0168}    \\
+&                    & (\num{0.245})    \\
+Cooperative Internationalism          &                    & \num{-0.0103}    \\
+&                    & (\num{0.742})    \\
+Militant Internationalism             &                    & \num{0.0678}**   \\
+&                    & (\num{0.00732})  \\
+Isolationism                          &                    & \num{-0.209}***  \\
+&                    & (\num{1.32e-13}) \\
+Pre-Treatment Opinion on Military Aid & \num{-0.589}***   & \num{-0.419}***  \\
+& (\num{6.24e-155}) & (\num{1.78e-41}) \\
+Num.Obs.                              & \num{3029}        & \num{3029}       \\
+R2                                    & \num{0.174}       & \num{0.225}      \\
+R2 Adj.                               & \num{0.173}       & \num{0.218}      \\
+RMSE                                  & \num{0.40}        & \num{0.39}       \\
+\bottomrule
+\end{talltblr}
+\end{table} 
+
+\begin{table}[H]
+\centering
+\begin{talltblr}[         %% tabularray outer open
+caption={Probability of Invoking Theme - Not Our War},
+note{}={+ p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+label={tab:notourwar}]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]},
+column{2,3}={}{halign=c,},
+column{1}={}{halign=l,},
+hline{20}={1,2,3}{solid, black, 0.05em},
+}                     %% tabularray inner close
+\toprule
+& Main Model & With Controls \\ \midrule %% TinyTableHeader
+Domestic Signal                       & \num{0.016}      & \num{0.0148}     \\
+& (\num{0.174})    & (\num{0.203})    \\
+Trump Signal                          & \num{0.0188}     & \num{0.0184}     \\
+& (\num{0.117})    & (\num{0.125})    \\
+Competing Policy Signals              & \num{0.0361}**   & \num{0.0352}**   \\
+& (\num{0.00379})  & (\num{0.00463})  \\
+Age                                   &                   & \num{2.68e-05}   \\
+&                   & (\num{0.915})    \\
+Gender (Male)                         &                   & \num{0.00839}    \\
+&                   & (\num{0.358})    \\
+Cooperative Internationalism          &                   & \num{-0.000558}  \\
+&                   & (\num{0.978})    \\
+Militant Internationalism             &                   & \num{-0.0237}    \\
+&                   & (\num{0.276})    \\
+Isolationism                          &                   & \num{0.093}***   \\
+&                   & (\num{8.28e-08}) \\
+Pre-Treatment Opinion on Military Aid & \num{0.216}***   & \num{0.15}***    \\
+& (\num{6.08e-36}) & (\num{9.75e-15}) \\
+Num.Obs.                              & \num{3029}       & \num{3029}       \\
+R2                                    & \num{0.073}      & \num{0.089}      \\
+R2 Adj.                               & \num{0.072}      & \num{0.081}      \\
+RMSE                                  & \num{0.24}       & \num{0.24}       \\
+\bottomrule
+\end{talltblr}
+\end{table} 
+
+\subsubsection{Country-Level}
+\begin{table}[H]
+\centering
+\begin{talltblr}[         %% tabularray outer open
+caption={Probability of Invoking Theme - Solidarity Arguments (UK)},
+note{}={+ p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+label={tab:solidarity_uk}]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]},
+column{2,3}={}{halign=c,},
+column{1}={}{halign=l,},
+hline{20}={1,2,3}{solid, black, 0.05em},
+}                     %% tabularray inner close
+\toprule
+& Main Model & With Controls \\ \midrule %% TinyTableHeader
+Domestic Signal                       & \num{-0.0615}+   & \num{-0.0592}+   \\
+& (\num{0.0548})   & (\num{0.0621})   \\
+Trump Signal                          & \num{-0.0248}    & \num{-0.0299}    \\
+& (\num{0.447})    & (\num{0.355})    \\
+Competing Policy Signals              & \num{-0.0951}**  & \num{-0.0878}**  \\
+& (\num{0.00273})  & (\num{0.00524})  \\
+Age                                   &                   & \num{-0.000295}  \\
+&                   & (\num{0.653})    \\
+Gender (Male)                         &                   & \num{-0.00304}   \\
+&                   & (\num{0.891})    \\
+Cooperative Internationalism          &                   & \num{-0.0108}    \\
+&                   & (\num{0.827})    \\
+Militant Internationalism             &                   & \num{0.103}*     \\
+&                   & (\num{0.0235})   \\
+Isolationism                          &                   & \num{-0.209}***  \\
+&                   & (\num{4.98e-07}) \\
+Pre-Treatment Opinion on Military Aid & \num{-0.732}***  & \num{-0.555}***  \\
+& (\num{1.04e-89}) & (\num{2.09e-31}) \\
+Num.Obs.                              & \num{1528}       & \num{1528}       \\
+R2                                    & \num{0.174}      & \num{0.204}      \\
+R2 Adj.                               & \num{0.172}      & \num{0.194}      \\
+RMSE                                  & \num{0.44}       & \num{0.43}       \\
+\bottomrule
+\end{talltblr}
+\end{table}
+
+\begin{table}[H]
+\centering
+\begin{talltblr}[         %% tabularray outer open
+caption={Probability of Invoking Theme - Not Our War (Germany)},
+note{}={+ p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+label={tab:notourwar_de}]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]},
+column{2,3}={}{halign=c,},
+column{1}={}{halign=l,},
+hline{20}={1,2,3}{solid, black, 0.05em},
+}                     %% tabularray inner close
+\toprule
+& Main Model & With Controls \\ \midrule %% TinyTableHeader
+Domestic Signal                       & \num{0.00272}    & \num{-0.00231}   \\
+& (\num{0.875})    & (\num{0.894})    \\
+Trump Signal                          & \num{0.0124}     & \num{0.00981}    \\
+& (\num{0.489})    & (\num{0.585})    \\
+Competing Policy Signals              & \num{0.0424}*    & \num{0.0408}*    \\
+& (\num{0.0277})   & (\num{0.0333})   \\
+Age                                   &                   & \num{-0.000291}  \\
+&                   & (\num{0.484})    \\
+Gender (Male)                         &                   & \num{-0.0139}    \\
+&                   & (\num{0.301})    \\
+Cooperative Internationalism          &                   & \num{-0.0356}    \\
+&                   & (\num{0.265})    \\
+Militant Internationalism             &                   & \num{-0.0302}    \\
+&                   & (\num{0.302})    \\
+Isolationism                          &                   & \num{0.0907}***  \\
+&                   & (\num{0.000211}) \\
+Pre-Treatment Opinion on Military Aid & \num{0.209}***   & \num{0.132}***   \\
+& (\num{4.21e-23}) & (\num{4.05e-07}) \\
+Num.Obs.                              & \num{1501}       & \num{1501}       \\
+R2                                    & \num{0.077}      & \num{0.097}      \\
+R2 Adj.                               & \num{0.074}      & \num{0.085}      \\
+RMSE                                  & \num{0.25}       & \num{0.25}       \\
+\bottomrule
+\end{talltblr}
+\end{table} 
+
+\begin{table}[H]
+\centering
+\begin{talltblr}[         %% tabularray outer open
+caption={Probability of Invoking Theme - Ambivalence (UK)},
+note{}={+ p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+label={tab:ambivalence_uk}]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]},
+column{2,3}={}{halign=c,},
+column{1}={}{halign=l,},
+hline{20}={1,2,3}{solid, black, 0.05em},
+}                     %% tabularray inner close
+\toprule
+& Main Model & With Controls \\ \midrule %% TinyTableHeader
+Domestic Signal                       & \num{0.0671}** & \num{0.0683}**   \\
+& (\num{0.0032}) & (\num{0.00241})  \\
+Trump Signal                          & \num{0.0164}   & \num{0.0207}     \\
+& (\num{0.423})  & (\num{0.311})    \\
+Competing Policy Signals              & \num{0.0329}   & \num{0.0354}+    \\
+& (\num{0.121})  & (\num{0.0937})   \\
+Age                                   &                 & \num{-0.00108}*  \\
+&                 & (\num{0.0132})   \\
+Gender (Male)                         &                 & \num{-0.0227}    \\
+&                 & (\num{0.152})    \\
+Cooperative Internationalism          &                 & \num{-0.0555}+   \\
+&                 & (\num{0.0885})   \\
+Militant Internationalism             &                 & \num{-0.147}***  \\
+&                 & (\num{2.11e-05}) \\
+Isolationism                          &                 & \num{-0.0143}    \\
+&                 & (\num{0.592})    \\
+Pre-Treatment Opinion on Military Aid & \num{-0.00808} & \num{-0.0106}    \\
+& (\num{0.669})  & (\num{0.703})    \\
+Num.Obs.                              & \num{1528}     & \num{1528}       \\
+R2                                    & \num{0.006}    & \num{0.044}      \\
+R2 Adj.                               & \num{0.004}    & \num{0.032}      \\
+RMSE                                  & \num{0.31}     & \num{0.30}       \\
+\bottomrule
+\end{talltblr}
+\end{table} 
+
+
+
+\subsection{Meta-Analysis Using Natural Language Processing}
+Natural language processing offers a meta-view of the words that distinguish respondents' arguments in favor of and in opposition to military aid for Ukraine. Each open response constituted a single text within either the English or German corpus, which were analyzed separately to avoid potential biases when mixing language corpi. Standard pre-processing, including the removal of stopwords and obvious non‑responses, was applied before tokenizing each text into unigrams and, in a separate step, into bigrams. Chi‑squared statistics were calculated to identify single words and pairs of words that uniquely distinguished arguments made by opponents of military aid from those made by supporters of military aid. The German unigrams and bigrams were then translated into English, after tokenization and analysis was carried out in the original language. 
+
+In Figure \ref{fig:unigrams}, the top twenty most distinct unigrams used by both British and German respondents are depicted, along with a chi-squared statistic. The null hypothesis of the chi-squared test is that there is no association between being either a supporter or an opponent, and using a particular word to justify your opinion. The chi-squared distance compares the observed counts of each unigram against the expectation that supporters and opponents use the word at similar rates, assuming there is no association between group membership and word choice. Thus, a larger absolute chi‑squared \textit{distance} indicates that a word is especially characteristic of one group, when the other group is held as the reference point. 
+
+\begin{figure} [H]
+\begin{minipage}{0.47\textwidth}
+\includegraphics[width=\linewidth]{Figures/unique_germanwords_chi_sq.png}
+\end{minipage}
+\hfill
+\begin{minipage}{0.47\textwidth}
+\includegraphics[width=\linewidth]{Figures/unique_wordsuk_chi_sq.png}
+\end{minipage}
+\caption{Most Distinct Words Differentiating Supporters from Opponents}
+\label{fig:unigrams}
+\end{figure}
+
+The single words most likely to be used by opponents (and least likely to be used by supporters) in both countries appear to relate to economic costs and preexisting problems. Moreover, words like \textit{already} and \textit{enough} may represent the notion that the public feels fatigued by the amount of aid being supplied. This differs from supporters, who are more likely to use words that relate to principles or duties: \textit{protect, help, security, Europe, freedom.} In both countries, supporters are also far more likely than opponents to mention \textit{Putin, Russia,} and \textit{Ukraine} in their answers Interestingly, British supporters of military aid are more likely than opponents to reference Trump as a reason for increasing aid to Ukraine.  
+
+An analysis of word pairings sheds more light on how supporters and opponents build distinct arguments for or against military aid. Figure \ref{fig:bigrams} highlights how the word \textit{money} is most often paired with words like \textit{spent, spend, better, need, enough, much, put,} and \textit{laundering.} Opposing arguments from the UK sample are also likely to reference  British tax payers, British people, domestic issues, the cost of living, and the government. Comparatively, German opponents were more likely to reference their \textit{own country, own problems,} and \textit{own money} than German supporters. Word pairings like \textit{more and more,}\footnote{In German, \textit{immer mehr} constitutes a bigram, but is best translated into English as \textit{more and more}.} \textit{more weapons, Germany enough, enough already,} and \textit{end war} appear to emphasize fatigue with the continued delivery of military aid. 
+
+\begin{figure} [H]
+\begin{minipage}{0.47\textwidth}
+\includegraphics[width=\linewidth]{Figures/unique_germanbigrams_chi_sq.png}
+\end{minipage}
+\hfill
+\begin{minipage}{0.47\textwidth}
+\includegraphics[width=\linewidth]{Figures/unique_bigramuk_chi_sq.png}
+\end{minipage}
+\caption{Most Distinct Word Pairings Differentiating Supporters from Opponents}
+\label{fig:bigrams}
+\end{figure}
+
+Meanwhile, supporters of military aid across both countries are much more likely than their opposing countrymen and women to use pairings emphasizing Ukraine's need for support, defense, and help. These same respondents are also more likely to reference \textit{Russian aggression} and the invasion or attack on other countries as a justification for sending aid. Word pairings like \textit{right thing} and \textit{let down} also relate to sending aid as a matter of principle. German supporters of miliary aid were also more likely to call on Europe, as well as their own freedom and security. 
+
+
+\section{Full Questionnaire: English Version}
+\begin{enumerate}
+    \item \textbf{Covariates}:
+    \begin{enumerate}
+        \item Age
+        \item Gender
+        \item Region of residence
+        \item Highest attained Education qualification
+        \item Current employment status 
+        \item Monthly Household Gross Income
+        \item Political Ideology on a Left-Right, 0-10 Scale
+        \item Political Disengagement
+        \item Party voted for in last election (2024) 
+        \item Voting intentions for next election 
+    \end{enumerate}
+    \item \textbf{Degree of Political Interest}: Generally speaking, how interested are you in politics?
+    \begin{enumerate}
+        \item Not at all interested
+        \item Not very interested
+        \item Moderately interested
+        \item Fairly interested
+        \item Very interested 
+    \end{enumerate}
+    \item \textbf{Pre-Treatment DV:}  ``How would you evaluate the supply of British military aid to Ukraine? In your opinion, is the volume of British arms deliveries to Ukraine..." 
+        \begin{enumerate}
+            \item Far too little
+            \item Slightly too little
+            \item Just the right amount
+            \item Slightly too much
+            \item Far too much 
+        \end{enumerate}
+    \item \textbf{Matrix of Foreign Policy Postures (Randomize Statement Order):} ``To what extent do you agree with the following statements?"
+    \begin{enumerate}
+        \item \textit{The United Kingdom should be more committed to diplomacy rather than using the military in international crises.}
+        \begin{enumerate}
+            \item Strongly disagree
+            \item Somewhat disagree
+            \item Neither agree nor disagree
+            \item Somewhat agree
+            \item Strongly agree
+        \end{enumerate}
+        \item \textit{The United Kingdom needs a strong military to be effective in international relations.}
+        \begin{enumerate}
+            \item Strongly disagree
+            \item Somewhat disagree
+            \item Neither agree nor disagree
+            \item Somewhat agree
+            \item Strongly agree
+        \end{enumerate}
+        \item \textit{The United Kingdom's interests are best protected by minding its own business and not getting involved in international affairs.}
+        \begin{enumerate}
+            \item Strongly disagree
+            \item Somewhat disagree
+            \item Neither agree nor disagree
+            \item Somewhat agree
+            \item Strongly agree
+        \end{enumerate}
+    \end{enumerate}
+    \item \textbf{List of Vignettes for Each Treatment Group}
+    \begin{enumerate}
+        \item \textbf{Control Condition:} Since the Russian invasion of Ukraine in 2022, the United Kingdom, the United States, and other NATO countries have sent multiple packages of military aid to Ukraine.
+        \item \textbf{Condition 1 - Domestic Policy Signal:} Since the Russian invasion of Ukraine in 2022, the United Kingdom, the United States, and other NATO countries have sent multiple packages of military aid to Ukraine. However, in the coming months the British government will likely reevaluate how best to end the war. Imagine that the government announces plans to increase British military aid for Ukraine in order to put a stop to the fighting and create lasting peace and stability in Europe.  
+        \item \textbf{Condition 2 - Trump Policy Signal:} Since the Russian invasion of Ukraine in 2022, the United Kingdom, the United States, and other NATO countries have sent multiple packages of military aid to Ukraine. However, in his second term as President of the United States, Donald Trump will likely reevaluate how best to end the war. Imagine that President Trump announces plans to cut American military aid for Ukraine in order to put a stop to the fighting and create lasting peace and stability in Europe.
+        \item \textbf{Condition 3 - Trump Policy Signal + Domestic Policy Signal} Since the Russian invasion of Ukraine in 2022, the United Kingdom, the United States, and other NATO countries have sent multiple packages of military aid to Ukraine. However, in his second term as President of the United States, Donald Trump will likely reevaluate how best to end the war. Imagine that President Trump announces plans to cut American military aid for Ukraine in order to put a stop to the fighting and create lasting peace and stability in Europe. 
+        \paragraph{}
+        Meanwhile, in the coming months the British government will also likely reevaluate how best to end the war. Imagine that the government announces plans to increase British military aid for Ukraine in order to put a stop to the fighting and create lasting peace and stability in Europe.
+        \item \textbf{Condition 3 - Domestic Policy Signal + Trump Policy Signal:} Since the Russian invasion of Ukraine in 2022, the United Kingdom, the United States, and other NATO countries have sent multiple packages of military aid to Ukraine. However, in the coming months the British government will likely reevaluate how best to end the war. Imagine that the government announces plans to increase British military aid for Ukraine in order to put a stop to the fighting and create lasting peace and stability in Europe. 
+        \paragraph{}
+        Meanwhile, in his second term as President of the United States, Donald Trump will also likely reevaluate how best to end the war. Imagine that President Trump announces plans to cut American military aid for Ukraine in order to put a stop to the fighting and create lasting peace and stability in Europe.
+    \end{enumerate}
+    \item \textbf{Main Post Treatment Dependent Variable:} ``To what extent would you support a decision by the British government to increase the amount of military aid the UK sends to Ukraine?" 
+    \begin{enumerate}
+            \item Strongly oppose
+            \item Somewhat oppose
+            \item Neither support nor oppose
+            \item Somewhat support
+            \item Strongly support
+        \end{enumerate}
+    \item \textbf{Open Response Field (Same Page)}: ``You answered that you would [PIPE PREVIOUS ANSWER, LOWER CASE] the British government's decision to increase military aid for Ukraine. In a few words, please explain why you feel that way."
+    \item \textbf{Additional Post-Treatment DV:} ``Imagine that the governments of other NATO countries are also discussing the amount of military aid they provide to Ukraine. What do you think the other NATO countries should do?"
+    \begin{enumerate}
+        \item Decrease military aid by a lot
+        \item Decrease military aid by a little
+        \item  Not change the amount of military aid 
+        \item Increase military aid by a little
+        \item Increase military aid by a lot 
+
+    \end{enumerate}
+\textbf{RANDOMIZE ORDER OF QUESTIONS 9-14}
+    \item \textbf{Domestic Aid Prioritization:}  ``Some people think that the British government has a primary responsibility to help its own people at home, while others think the UK should also be active in helping our allies abroad. If there are people in need at home and abroad, which group do you think the British government should prioritise?" 
+    \begin{enumerate}
+        \item Only help people at home
+        \item Prioritise people at home, but still help some people abroad
+        \item Help people at home and abroad equally
+        \item Prioritise people abroad, but still help some people at home 
+        \item Only help people abroad 
+    \end{enumerate}
+    \item \textbf{\textbf{Degree of Need / Solidarity Feelings for Ukraine:}} ``To what extent do you agree with the following statement? \textit{The United Kingdom should continue to support Ukraine with military aid for as long as needed."}
+    \begin{enumerate}
+        \item Strongly disagree
+        \item Somewhat disagree
+        \item Neither agree nor disagree
+        \item Somewhat agree
+        \item Strongly agree
+    \end{enumerate}
+    \item \textbf{Perception of War Responsibility:} ``To what extent do you agree with the following statement? \textit{Russia is solely responsible for the outbreak of the war in Ukraine.}"
+    \begin{enumerate}
+        \item Strongly disagree
+        \item Somewhat disagree
+        \item Neither agree nor disagree
+        \item Somewhat agree
+        \item Strongly agree
+    \end{enumerate}
+    \item \textbf{Perceived Aid Effectiveness:} ``To what extent do you agree with the following statement? \textit{Further deliveries of weapons to Ukraine will not help create lasting peace and stability in Europe.}"
+        \begin{enumerate}
+        \item Strongly disagree
+        \item Somewhat disagree
+        \item Neither agree nor disagree
+        \item Somewhat agree
+        \item Strongly agree
+        \end{enumerate}
+    \item \textbf{Perception of Domestic Government}: ``In general, do you approve or disapprove of the way the British government is currently handling general affairs in the UK?"
+        \begin{enumerate}
+            \item Strongly disapprove
+            \item Somewhat disapprove
+            \item Neither approve nor disapprove
+            \item Somewhat approve
+            \item Strongly approve
+        \end{enumerate}
+    \item \textbf{Perception of Donald Trump}: ``In general, how would you summarize your feelings towards Donald Trump? Do you approve or disapprove of his politics?"
+        \begin{enumerate}
+            \item Strongly disapprove
+            \item Somewhat disapprove
+            \item Neither approve nor disapprove
+            \item Somewhat approve
+            \item Strongly approve 
+        \end{enumerate}
+    \end{enumerate}
+    
+\section{Full Questionnaire: German Version}
+\begin{enumerate}
+    \item \textbf{Covariates:}
+    \begin{enumerate}
+        \item Age 
+        \item Gender
+        \item Region 
+        \item Highest attained Education qualification
+        \item Current employment status
+        \item Monthly Household Gross Income
+        \item Political Ideology on a Left-Right, 0-10 Scale
+        \item Political Disengagement
+        \item Vote choice from previous national election (2021)
+        \item Voting intentions for next election
+    \end{enumerate}
+     \item \textbf{Degree of Political Interest}: Generally speaking, how interested are you in politics?
+    \begin{enumerate}
+        \item Not at all interested
+        \item Not very interested
+        \item Moderately interested
+        \item Fairly interested
+        \item Very interested 
+    \end{enumerate}
+    \item \textbf{Pre-Treatment DV:}  ``How would you evaluate the supply of German military aid to Ukraine? In your opinion, is the volume of German arms deliveries to Ukraine..." 
+        \begin{enumerate}
+            \item Far too little
+            \item Slightly too little
+            \item Just the right amount
+            \item Slightly too much
+            \item Far too much 
+        \end{enumerate}
+    \item \textbf{Matrix of Foreign Policy Postures (Randomize Statement Order):} ``To what extent do you agree with the following statements?"
+    \begin{enumerate}
+        \item \textit{Germany should be more committed to diplomacy rather than using the military in international crises.}
+        \begin{enumerate}
+            \item Strongly disagree
+            \item Somewhat disagree
+            \item Neither agree nor disagree
+            \item Somewhat agree
+            \item Strongly agree
+        \end{enumerate}
+        \item \textit{Germany needs a strong military to be effective in international relations.}
+        \begin{enumerate}
+            \item Strongly disagree
+            \item Somewhat disagree
+            \item Neither agree nor disagree
+            \item Somewhat agree
+            \item Strongly agree
+        \end{enumerate}
+        \item \textit{Germany interests are best protected by minding its own business and not getting involved in international affairs.}
+        \begin{enumerate}
+            \item Strongly disagree
+            \item Somewhat disagree
+            \item Neither agree nor disagree
+            \item Somewhat agree
+            \item Strongly agree
+        \end{enumerate}
+    \end{enumerate}
+    \item \textbf{List of Vignettes for Each Treatment Group}
+    \begin{enumerate}
+        \item \textbf{Control Condition:} Since the Russian invasion of Ukraine in 2022, Germany, the United States, and other NATO countries have sent several military aid packages to Ukraine.  
+        \item \textbf{Condition 1 - Domestic Policy Signal:} Since Russia's invasion of Ukraine in 2022, Germany, the United States, and other NATO countries have sent several military aid packages to Ukraine. However, the new coalition government is likely to reassess how best to end the war after the federal elections in February. Imagine that the new coalition government announces plans to increase German military aid to Ukraine in order to end the fighting and create lasting peace and stability in Europe.
+        \item \textbf{Condition 2 - Trump Policy Signal:} Since Russia's invasion of Ukraine in 2022, Germany, the United States, and other NATO countries have sent several military aid packages to Ukraine. However, during his second term as president of the United States, Donald Trump is likely to reassess how best to end the war. Imagine that President Trump announces plans to cut American military aid to Ukraine in order to end the fighting and create lasting peace and stability in Europe.
+        \item \textbf{Condition 3 - Trump Policy Signal + Domestic Policy Signal:} Since Russia's invasion of Ukraine in 2022, Germany, the United States, and other NATO countries have sent several military aid packages to Ukraine. However, during his second term as president of the United States, Donald Trump is likely to reassess how best to end the war. Imagine that President Trump announces plans to cut American military aid to Ukraine in order to end the fighting and create lasting peace and stability in Europe. 
+        \paragraph{}
+        Meanwhile, the new coalition government formed after the February federal elections will also likely reassess how best to end the war. Imagine that the new coalition government announces plans to increase German military aid to Ukraine in order to end the fighting and create lasting peace and stability in Europe.
+        \item \textbf{Condition 3 - Domestic Policy Signal + Trump Policy Signal:} Since Russia's invasion of Ukraine in 2022, Germany, the United States, and other NATO countries have sent several military aid packages to Ukraine. However, the new coalition government is likely to reassess how best to end the war after the federal elections in February. Imagine that the new coalition government announces plans to increase German military aid to Ukraine in order to end the fighting and create lasting peace and stability in Europe.
+\paragraph{}
+        Meanwhile, Donald Trump, in his second term as president of the United States, will also likely reassess how best to end the war. Imagine that President Trump announces plans to cut American military aid to Ukraine in order to end the fighting and create lasting peace and stability in Europe.
+    \end{enumerate}
+    \item \textbf{Main Post Treatment Dependent Variable:} ``To what extent would you support a decision by the German government to increase the amount of military aid the UK sends to Ukraine?" 
+    \begin{enumerate}
+            \item Strongly oppose
+            \item Somewhat oppose
+            \item Neither support nor oppose
+            \item Somewhat support
+            \item Strongly support
+        \end{enumerate}
+    \item \textbf{Open Response Field (Same Page)}: ``You answered that you would [PIPE PREVIOUS ANSWER, LOWER CASE] the German government's decision to increase military aid for Ukraine. In a few words, please explain why you feel that way."
+    \item \textbf{Additional Post-Treatment DV:} ``Imagine that the governments of other NATO countries are also discussing the amount of military aid they provide to Ukraine. What do you think the other NATO countries should do?"
+    \begin{enumerate}
+        \item Decrease military aid by a lot
+        \item Decrease military aid by a little
+        \item  Not change the amount of military aid 
+        \item Increase military aid by a little
+        \item Increase military aid by a lot 
+    \end{enumerate}
+    
+  \textbf{RANDOMIZE ORDER OF QUESTIONS 9-14}
+  
+    \item \textbf{Domestic Aid Prioritization:}  ``Some people think that the German government has a primary responsibility to help its own people at home, while others think Germany should also be active in helping our allies abroad. If there are people in need at home and abroad, which group do you think the German government should prioritise?" 
+    \begin{enumerate}
+        \item Only help people at home
+        \item Prioritise people at home, but still help some people abroad
+        \item Help people at home and abroad equally
+        \item Prioritise people abroad, but still help some people at home 
+        \item Only help people abroad 
+    \end{enumerate}
+    \item \textbf{\textbf{Degree of Need / Solidarity Feelings for Ukraine:}} ``To what extent do you agree with the following statement? \textit{Germany should continue to support Ukraine with military aid for as long as needed."}
+    \begin{enumerate}
+        \item Strongly disagree
+        \item Somewhat disagree
+        \item Neither agree nor disagree
+        \item Somewhat agree
+        \item Strongly agree
+    \end{enumerate}
+    \item \textbf{Perception of War Responsibility:} ``To what extent do you agree with the following statement? \textit{Russia is solely responsible for the outbreak of the war in Ukraine.}"
+    \begin{enumerate}
+        \item Strongly disagree
+        \item Somewhat disagree
+        \item Neither agree nor disagree
+        \item Somewhat agree
+        \item Strongly agree
+    \end{enumerate}
+    \item \textbf{Perceived Aid Effectiveness:} ``To what extent do you agree with the following statement? \textit{Further deliveries of weapons to Ukraine will not help create lasting peace and stability in Europe.}"
+        \begin{enumerate}
+        \item Strongly disagree
+        \item Somewhat disagree
+        \item Neither agree nor disagree
+        \item Somewhat agree
+        \item Strongly agree
+        \end{enumerate}
+    \item \textbf{Perception of Domestic Government}: ``Do you approve or disapprove of the way the federal government is currently handling general affairs in Germany?"
+        \begin{enumerate}
+            \item Strongly disapprove
+            \item Somewhat disapprove
+            \item Neither approve nor disapprove
+            \item Somewhat approve
+            \item Strongly approve
+        \end{enumerate}
+    \item \textbf{Perception of Donald Trump}: ``In general, how would you summarize your feelings towards Donald Trump? Do you approve or disapprove of his politics?"
+        \begin{enumerate}
+            \item Strongly disapprove
+            \item Somewhat disapprove
+            \item Neither approve nor disapprove
+            \item Somewhat approve
+            \item Strongly approve 
+        \end{enumerate}
+    \end{enumerate}
+    
+\end{appendices}
