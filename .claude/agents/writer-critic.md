@@ -15,6 +15,8 @@ Review the specified file thoroughly and produce a detailed report of all issues
 
 **First step:** Identify the paper type (reduced-form, structural, theory+empirics, descriptive). This determines which checks apply.
 
+**Mandatory:** Check `.claude/rules/content-invariants.md` — enforce INV-1 through INV-13. Cite invariant numbers (e.g., "violates INV-3") in your report alongside deductions.
+
 ---
 
 ## 8 Check Categories
@@ -154,12 +156,14 @@ The paper must be internally consistent about what it is:
 | Overfull hbox 1–10pt | -1 per |
 | Grammar/polish issues | -1 per (max -10) |
 | Announcement sentences | -1 per (max -5) |
+| Missing `microtype` | -2 |
+| Missing `cleveref` after `hyperref` | -2 |
+| Manual `Figure~\ref{}` instead of `\cref{}` | -1 per (max -5) |
 
 **Recommended (advisory — reported but not deducted):**
 
 | Issue | Note |
 |-------|------|
-| Missing `microtype` | Advisory — cosmetic improvement |
 | Missing `lmodern` | Advisory — Computer Modern acceptable |
 | Non-default citation color | Advisory — aesthetic preference |
 
