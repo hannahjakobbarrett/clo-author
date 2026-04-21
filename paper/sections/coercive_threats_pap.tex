@@ -82,7 +82,7 @@ For both of these hypotheses, the control group (no allied signal) will serve as
 
 \subsection{Sample and Recruitment}
 
-Participants will be recruited from YouGov's Danish online panel. The target sample is $n \approx 3{,}000$ voting-eligible adults (age 18 and above), allocated equally across treatment conditions ($n \approx 640$ per condition). Respondents who fail attention checks will be excluded from the analytical sample prior to hypothesis testing; target cell sizes refer to the post-exclusion sample.
+Participants will be recruited from YouGov's Danish online panel. The target sample is (xxxx) voting-eligible adults (age 18 and above), allocated equally across treatment conditions (xxx per condition). Respondents who fail attention checks will be excluded from the analytical sample prior to hypothesis testing; target cell sizes refer to the post-exclusion sample.
 
 \subsection{Treatments}
 \begin{table}[H]
@@ -90,13 +90,13 @@ Participants will be recruited from YouGov's Danish online panel. The target sam
 \caption{Three Condition Design}
 \label{tab:design}
 \footnotesize
-\begin{tabular}{p{0.4cm} p{3.2cm} p{8.8cm}}
+\begin{tabular}{p{3cm} p{3cm} p{8cm}}
 \toprule
- & \textbf{Condition} & \textbf{Allied Signal} \\
+\textbf{Condition} & \textbf{Threat} & \textbf{Allied Signal} \\
 \midrule
 C & Coercive Threat & None \\ 
-T1 & Coercive Threat, Unified Commitment & [TARGET COUNTRY]'s allies reached a formal consensus and made a collective commitment to providing military support to [TARGET COUNTRY] in this dispute. \\
-T2 & Coercive Threat, Allies Recommend Restraint & Denmark's NATO allies have urged Denmark to comply with the ultimatum, warning that military escalation would not serve the alliance's collective interests. \\
+T1 & Coercive Threat & Denmark's NATO allies reached a consensus and agreed to provide military support to Denmark in this dispute. \\
+T2 & Coercive Threat & Denmark's NATO allies urged Denmark to comply with the ultimatum, warning that military escalation would not serve the alliance's collective interests. \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -111,17 +111,15 @@ T2 & Coercive Threat, Allies Recommend Restraint & Denmark's NATO allies have ur
   \toprule
   \textbf{Block} & \textbf{Content} & \textbf{Measures} \\
   \midrule
-  0 & Pre-treatment Block & Age, gender, education, partisanship, political interest, foreign policy postures (isolationism, militant internationalism, cooperative internationalism)
+  1 & Pre-treatment Block & Age, gender, education, partisanship, political interest, foreign policy postures (isolationism, militant internationalism, cooperative internationalism)
    \\[6pt]
-  1 & Attention Check &  \\[6pt]
-  2 & Initial Threat Scenario \\ [6pt]
-  3 & Manipulation Check & Did Russia issue a direct demand? \\[6pt]
-  4 & Outcome Measures & Binary DV (comply/defy), continuous support for escalation (Likert scale), anger battery, reactance battery, reputation battery \\[6pt]
-  5 & Ally Treatment &  \\[6pt]
-  6 & Manipulation Checks & What position did Denmark's allies take? \\[6pt]
-  7 & Repeated Outcome Measure & Binary DV (comply/defy), continuous support for escalation (Likert scale) \\[6pt]
+  2 & Attention Check &  \\[6pt]
+  3 & Initial Threat Scenario \\ [6pt]
+  3 & Manipulation Check  & Did Russia issue a direct demand? \textit{(For All Respondents)} \\[6pt]
+  5 & \textit{Ally Treatment} & \textit{(Only for T1 and T2)} \\[6pt]
+  6 & \textit{2nd Manipulation Check} & \textit{(Only for T1 and T2: What position did Denmark's allies take?} \\[6pt]
+  7 & Outcome Measures & Binary DV (comply/defy), continuous support for escalation (Likert scale), anger battery, reactance battery, reputation battery \\[6pt] 
   8 & Open-ended response & \textit{In a few sentences, please explain why you think Denmark should follow that approach.} \\
-  9 & Repeated Outcome Measure & Anger battery, reactance battery, reputation battery, ally confidence, NATO trust \\
   \bottomrule
   \end{tabular}
   \end{table}
@@ -166,6 +164,8 @@ Danish naval forces intercepted a Russian vessel in the Baltic Sea, after it was
 
 Russian authorities deny any wrongdoing. In a public statement, the Russian government issued the following demand: if Denmark does not immediately release the vessel and crew, Russia will not hesitate to take military action to secure their release.
 \medskip
+
+[One Sentence - Ally Treatment for T1 and T2]
 
 \noindent\rule{\textwidth}{0.4pt}
 \bigskip
@@ -255,9 +255,9 @@ An anger index and a fear index are computed as the mean of the respective items
 \textit{To what extent do you agree or disagree with the following statements?} (presented in randomised order; 5-point scale from \textit{Strongly disagree} to \textit{Strongly agree})
 
 \begin{enumerate}
-    \item This situation puts Denmark's international reputation at stake.
-    \item Russia has humiliated Denmark.
-    \item Releasing the vessel now would invite further Russian threats to Denmark's security in the long run.
+    \item Giving in to Russia puts Denmark's international reputation at stake.
+    \item Giving in to Russia would be humiliating for Denmark
+    \item Giving in to Russia now would invite further threats to Denmark's security in the long run.
     \item Releasing the vessel would reduce the risk of war with Russia. \hfill \textit{[reverse-coded]}
 \end{enumerate}
 
@@ -265,20 +265,14 @@ An anger index and a fear index are computed as the mean of the respective items
 \textit{To what extent do you agree or disagree with the following statements?} (presented in randomised order; 5-point scale from \textit{Strongly disagree} to \textit{Strongly agree})
 
 \begin{enumerate}
-    \item Russia tried to make a decision for Denmark.
-    \item Russia tried to pressure Denmark into acting against its own interests.
-    \item Russia tried to take away Denmark's freedom to choose how to respond.
+    \item Russia tried to make a decision for Denmark
+    \item Russia tried to manipulate Denmark
+    \item Russia tried to pressure Denmark 
+    \item Russia tried to take away Denmark's freedom to choose how to respond
 \end{enumerate}
 
 \subsection{Secondary Outcomes}
-
-\paragraph{National resolve.}
-\textit{If this conflict were to escalate, how confident are you that Denmark would stand firm against Russia's ultimatum?} (0--10 scale)
-
-\paragraph{NATO confidence}
-\textit{Allied commitment check:} How confident are you that Denmark's allies would provide military support if this conflict were to escalate? (slider, 0\% -- 100\%)
-
-\paragraph{NATO trust.}
+\paragraph{NATO trust}
 \textit{How much do you trust NATO as an institution to protect Denmark's security?} (0--10 scale)
 
 %-------------------------------------------------------------------
